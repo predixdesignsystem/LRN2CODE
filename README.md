@@ -1,8 +1,5 @@
 # Things to watch out for in the Polymer 2 upgrade
 
-## WCT
-If you see an error thrown by Firefox outside of the test function `document.getElementById(...).create is not a function`, try changing your test-fixture `id` from dash-case to camelCase (no idea why this works ¯\\_(ツ)_/¯ ).
-
 ## Sass
 Nesting will not work with the `:host` or `:slotted` pseudo-classes.
 
