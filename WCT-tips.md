@@ -38,4 +38,4 @@ test('Overlay accepts style variable', function(done) {
 - Second is saying to wait a second until repeating the 'test'. You can also click/prod/poke the component again here to try to cause the 'test' result (e.g. click outside a dropdown to try to force it to close etc.).
 - Third function states that the test has resolved (i.e. div is Salmon). Now assert the conditions you are testing and call `done()` to say that async test is finished/satisfied.
 
-This will still timeout after 10 seconds, the standard Mocha behaviour for async tests if the condition isn't safisfied.
+This will still timeout after 10 seconds, the standard Mocha behaviour for async tests, if the condition isn't safisfied.
