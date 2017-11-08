@@ -14,7 +14,9 @@ suite('Base Automation Tests for px-deck-selector', function(done) {
 Resets `fixture` after each test run, `flush`/`done()` pair mean component has shaken itself out/stamped local DOM ready for use in your test method.
 
 ### Firefox Error
-If you see an error thrown by Firefox outside of the test function `document.getElementById(...).create is not a function`, try changing your test-fixture `id` from dash-case to camelCase (no idea why this works ¯\\_(ツ)_/¯ ).
+If you see an error thrown by Firefox outside of the test function `document.getElementById(...).create is not a function`, try changing your test-fixture `id` from dash-case to camelCase (no idea why this works ¯\\_(ツ)_/¯ ). 
+
+Another reason for this error could be that you forgot to update the URL for webcomponentsjs to leave out the `min` part.
 
 ### async.until/async.whilst to wait for a condition prior to assertion:
 ```
