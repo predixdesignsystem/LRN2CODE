@@ -1,4 +1,5 @@
-# A nice test setup technique:
+# WCT Tips
+### A nice test setup technique:
 
 ```
 suite('Base Automation Tests for px-deck-selector', function(done) {
