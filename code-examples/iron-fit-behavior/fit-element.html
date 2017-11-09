@@ -1,0 +1,23 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-fit-behavior/iron-fit-behavior.html">
+
+<dom-module id="fit-element">
+  <template>
+    <style>
+      :host {
+        background-color: slateblue;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    <slot></slot>
+  </template>
+  <script>
+    Polymer({
+      is: 'fit-element',
+      behaviors: [
+        Polymer.IronFitBehavior
+      ]
+    });
+  </script>
+</dom-module>
