@@ -58,3 +58,51 @@ Same goes for `is="custom-style"`. Never needed inside a component template.
       <style>
 ```
 ^^ good
+
+## Async/await in a nutshell
+
+```<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <script>
+
+      let moo = () => {
+        return new Promise( (resolve) => {
+
+          return setTimeout((res) => {
+            console.log('here');
+            return resolve('resolved');
+          }, 2000);
+        });
+      }
+
+      let baa = async () => {
+        await moo();
+        await moo();
+        console.log('done');
+      }
+
+      baa();
+    </script>
+  </body>
+</html>
+```
+will log:
+``` 
+here
+here
+done
+```
+without the `await` will long
+```
+done
+here
+here
+```
+
+(Note: does not work in IE)
