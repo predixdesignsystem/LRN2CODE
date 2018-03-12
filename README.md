@@ -106,3 +106,11 @@ here
 ```
 
 (Note: does not work in IE)
+
+# Compoennts
+
+## Naming things
+
+* `key` is a property used in React, so for easier integration, avoid just `key` as a Polymer property
+* `title` attributes causes a browser tooltip in some browsers/OS
+* `inert` is a new HTML spec attribute
